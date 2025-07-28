@@ -1,0 +1,24 @@
+
+h6 {
+    font-size: 24px;
+    font-weight: 400 !important;
+    color: #383F7A;
+    font-family: 'Proxima Nova', sans-serif;
+}
+h4 {
+    font-size: 40px;
+    font-weight: 600;
+    font-style: semi-bold;
+    color: #4D98FF;
+    font-family: 'Proxima Nova', sans-serif;
+
+}
+
+p {
+    color: #383F7A;
+    font-weight: 400;
+    font-style: regular;
+    font-size: 14px;
+    font-family: 'Proxima Nova', sans-serif;
+
+}

@@ -1,0 +1,15 @@
+.icon-wrapper {
+  background-color: #D6E7FF;
+  border-radius: 28px;
+  /* padding: 120px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.icon-wrapper i {
+  color: #003276;
+  font-size: 20px;
+  
+}
