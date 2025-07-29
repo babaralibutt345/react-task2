@@ -4,7 +4,7 @@ import logo from '../assets/logo.png';
 
 const Sidebar = () => {
     return (
-        <div className="sidebar d-flex flex-column justify-content-between">
+        <div className="sidebar d-flex flex-column justify-content-start">
             <div>
                 <div className="logo p-4">
                     <img src={logo} alt="" width={193} height={40} />

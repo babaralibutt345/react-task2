@@ -15,8 +15,8 @@ const StatusTable = ({ title, headers, data }) => {
     };
 
     return (
-        <div className="card p-5 mt-4 shadow-sm">
-            <div className="d-flex justify-content-between align-items-center border-bottom pb-3 mb-2">
+        <div className="card p-5 mt-4 mb-4 shadow-sm">
+            <div className="d-flex justify-content-between align-items-center pb-3 mb-2" style={{ borderBottom: '1px solid #D6E7FF' }}>
                 <h6>{title}</h6>
                 <a href="#" className='text-decoration-none view-all-btn'>View All</a>
             </div>
@@ -24,7 +24,7 @@ const StatusTable = ({ title, headers, data }) => {
                 <table className="table table-borderless m-0">
                     <colgroup>
                         {headers.map((_, i) => (
-                            <col key={i} style={{ width: `${100/headers.length}%` }} />
+                            <col key={i}  />
                         ))}
                     </colgroup>
                     <thead>

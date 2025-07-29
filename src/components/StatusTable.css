@@ -1,71 +1,83 @@
 .table-header {
-    color: #4D98FF !important;
-    font-weight: 600 !important;
-    font-size: 18px !important;
-    font-style: semi-bold !important;
+  color: #4d98ff !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  font-style: semi-bold !important;
 }
 
 .tab-content {
-    color: #383F7A !important;
+    color: #383f7a !important;
     font-family: "open sans", sans-serif;
     font-size: 16px !important;
     font-weight: 400 !important;
 }
+
+
+
+.table-header {
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
 .high-badge {
-    background-color: #E2FFF4 !important;
-    color: #34C38F !important;
-    border-radius: 40px !important;
-    padding: 6px 12px !important;
-    font-weight: 600 !important;
-    font-size: 14px !important;
+  background-color: #e2fff4 !important;
+  color: #34c38f !important;
+  border-radius: 40px !important;
+  padding: 6px 12px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
 }
 .medium-badge {
-    background-color: #FFF7E9 !important;
-    color: #F1B44C !important;
-    border-radius: 40px !important;
-    padding: 6px 12px !important;
-    font-weight: 600 !important;
-    font-size: 14px !important;
+  background-color: #fff7e9 !important;
+  color: #f1b44c !important;
+  border-radius: 40px !important;
+  padding: 6px 12px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
 }
 .weak-badge {
-    background-color:#FFF0F0 !important;
-    color: #F46A6A !important;
-    border-radius: 40px !important;
-    padding: 6px 12px !important;
-    font-weight: 600 !important;
-    font-size: 14px !important;
+  background-color: #fff0f0 !important;
+  color: #f46a6a !important;
+  border-radius: 40px !important;
+  padding: 6px 12px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
 }
 
 .pending-badge {
-    background-color: #EFEFEF;
-    color: #787878;
-    border-radius: 40px !important;
-    padding: 6px 12px !important;
-    font-weight: 600 !important;
-    font-size: 14px !important;
+  background-color: #efefef;
+  color: #787878;
+  border-radius: 40px !important;
+  padding: 6px 12px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
 }
 
 .uploaded-badge {
-    background-color: #ECF7FF;
-    color: #014FB9;
-    border-radius: 40px !important;
-    padding: 6px 12px !important;
-    font-weight: 600 !important;
-    font-size: 14px !important;
+  background-color: #ecf7ff;
+  color: #014fb9;
+  border-radius: 40px !important;
+  padding: 6px 12px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
 }
 
 .generated-badge {
-    background-color: #ECFFF6;
-    color: #1AA673;
-    border-radius: 40px !important;
-    padding: 6px 12px !important;
-    font-weight: 600 !important;
-    font-size: 14px !important;
+  background-color: #ecfff6;
+  color: #1aa673;
+  border-radius: 40px !important;
+  padding: 6px 12px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
 }
 .view-all-btn {
-    font-weight: 600;
-    font-size: 18px !important;
-    font-style: semi-bold !important;
-    color: #003276 !important;
-
+  font-weight: 600;
+  font-size: 18px !important;
+  font-style: semi-bold !important;
+  color: #003276 !important;
 }
+
+
+

@@ -30,16 +30,16 @@ const App = () => {
   return (
     <div className="d-flex">
       <Sidebar />
-      <div className="main-content flex-grow-1 bg-light p-2" style={{ marginLeft: '320px' }}>
+      <div className="main-content flex-grow-1 p-2" style={{ marginLeft: 'clamp(320px, 320px + 0vw, 320px)', background:'linear-gradient(96.39deg, #F2F7FF -22.45%, #E8F2FF 55.85%, #F2F7FF 150.81%)'}}>
         <div className="container-fluid px-3">
         <TopIcons />
-          <div className="row g-4" style={{ backgroundColor:'#E9F3FF03' }}>
-          <div className="col-md-4"><StatCard title="Total Donations" value="$52,440" week={26} month={120} /></div>
-          <div className="col-md-4"><StatCard title="Total Advisors" value={244} week={26} month={120} /></div>
-          <div className="col-md-4"><StatCard title="Total Clients" value={1520} week={26} month={120} /></div>
-          <div className="col-md-4"><StatCard title="Total Calculations" value={42540} week={26} month={120} /></div>
-          <div className="col-md-4"><StatCard title="Received Checks" value={154} week={26} month={120} /></div>
-          <div className="col-md-4"><StatCard title="Charity Partners" value={2461} week={26} month={120} /></div>
+          <div className="row g-3">
+            <div className="col-6 col-lg-6 col-xl-6 col-xxl-4"><StatCard title="Total Donations" value="$52,440" week={26} month={120} /></div>
+            <div className="col-6 col-lg-6 col-xl-6 col-xxl-4"><StatCard title="Total Advisors" value={244} week={26} month={120} /></div>
+            <div className="col-6 col-lg-6 col-xl-6 col-xxl-4"><StatCard title="Total Clients" value={1520} week={26} month={120} /></div>
+            <div className="col-6 col-lg-6 col-xl-6 col-xxl-4"><StatCard title="Total Calculations" value={42540} week={26} month={120} /></div>
+            <div className="col-6 col-lg-6 col-xl-6 col-xxl-4"><StatCard title="Received Checks" value={154} week={26} month={120} /></div>
+            <div className="col-6 col-lg-6 col-xl-6 col-xxl-4"><StatCard title="Charity Partners" value={2461} week={26} month={120} /></div>
         </div>
         <StatusTable
           title="Advisors Status"

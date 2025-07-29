@@ -1,12 +1,12 @@
 
 h6 {
-    font-size: 24px;
+    font-size: clamp(13px, 10.4px + 0.8125vw, 26px);
     font-weight: 400 !important;
     color: #383F7A;
     font-family: 'Proxima Nova', sans-serif;
 }
 h4 {
-    font-size: 40px;
+    font-size: clamp(20px, 16px + 1.25vw, 40px);
     font-weight: 600;
     font-style: semi-bold;
     color: #4D98FF;
@@ -21,4 +21,10 @@ p {
     font-size: 14px;
     font-family: 'Proxima Nova', sans-serif;
 
+}
+
+@media (max-width: 1490px) {
+    .card-text {
+        float: left;;
+    }
 }
