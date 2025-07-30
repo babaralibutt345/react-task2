@@ -1,6 +1,6 @@
 .sidebar {
   width: 320px !important;
-  height: 100%;
+  height: 100% !important;
   /* background: linear-gradient(135deg, #0A1E91, #240046); */
   background: linear-gradient(0deg, #003276, #003276),
 conic-gradient(from 114.48deg at 100% 102.37%, #006676 -77.92deg, #6F036D 98.17deg, #1F0076 114.65deg, rgba(3, 93, 118, 0.2) 148.29deg, #003176 197.64deg, #76006C 231.84deg, #006676 282.08deg, #6F036D 458.17deg);
@@ -49,7 +49,7 @@ conic-gradient(from 114.48deg at 100% 102.37%, #006676 -77.92deg, #6F036D 98.17d
 }
 
 .sidebar-footer {
-  padding-top: 150px !important;
+  /* padding-top: 150px !important; */
 }
 
 div .text {

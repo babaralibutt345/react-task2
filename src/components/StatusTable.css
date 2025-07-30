@@ -1,14 +1,14 @@
 .table-header {
   color: #4d98ff !important;
   font-weight: 600 !important;
-  font-size: 18px !important;
+  font-size: clamp(12px, 10.8px + 0.375vw, 18px) !important;
   font-style: semi-bold !important;
 }
 
 .tab-content {
     color: #383f7a !important;
     font-family: "open sans", sans-serif;
-    font-size: 16px !important;
+    font-size: clamp(10px, 8.8px + 0.375vw, 16px) !important;
     font-weight: 400 !important;
 }
 
