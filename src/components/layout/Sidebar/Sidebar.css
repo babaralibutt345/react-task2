@@ -1,0 +1,65 @@
+.sidebar {
+    width: 320px !important;
+    height: 100% !important;
+    /* background: linear-gradient(135deg, #0A1E91, #240046); */
+    background: linear-gradient(0deg, #003276, #003276),
+        conic-gradient(from 114.48deg at 100% 102.37%, #006676 -77.92deg, #6F036D 98.17deg, #1F0076 114.65deg, rgba(3, 93, 118, 0.2) 148.29deg, #003176 197.64deg, #76006C 231.84deg, #006676 282.08deg, #6F036D 458.17deg);
+    ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: white;
+    z-index: 1000;
+}
+
+.sidebar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20%;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.05), transparent 60%),
+        radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.05), transparent 60%);
+    filter: blur(50px);
+    z-index: 0;
+}
+
+.sidebar-link {
+    color: white;
+    padding: 14px 20px;
+    /* margin: 5px 0; */
+    border-radius: 40px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.sidebar-link:hover,
+.sidebar-link.active {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    color: white;
+}
+
+
+div .text {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    font-family: 'Proxima Nova', sans-serif !important;
+
+}
+
+.text1 {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    font-family: 'Proxima Nova', sans-serif !important;
+
+}
