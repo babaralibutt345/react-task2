@@ -1,7 +1,7 @@
 import React from 'react';
-import './TopIcons.css'; // Assuming you have a CSS file for styling
+import './Topbar.css'; // Assuming you have a CSS file for styling
 
-const TopIcons = () => {
+const Topbar = () => {
     return (
         <div className="d-flex justify-content-end gap-3 pt-4 pb-4">
             <div className="icon-wrapper" style={{ padding: '12px' }}><i className="fa-solid fa-gear"></i></div>
@@ -11,4 +11,4 @@ const TopIcons = () => {
     );
 };
 
-export default TopIcons;
+export default Topbar;

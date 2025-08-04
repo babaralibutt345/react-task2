@@ -3,7 +3,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar/Sidebar.jsx";
-import TopIcons from "./TopIcons/TopIcons.jsx";
+import TopIcons from "./Topbar/Topbar.jsx";
 import "./Layout.css";
 
 const Layout = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 
-const ViewAdvisorProfile = () => {
+const ViewUserProfile = () => {
     return <div>ViewProfile Page</div>;
 };
 
-export default ViewAdvisorProfile;
+export default ViewUserProfile;
