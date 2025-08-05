@@ -14,13 +14,14 @@ const StatusTable = ({ title, headers, data }) => {
         }
     };
 
+
     return (
         <div className="card p-5 mt-4 mb-4 shadow-sm border-0">
             <div className="d-flex justify-content-between align-items-center pb-3 mb-2" style={{ borderBottom: '1px solid #D6E7FF' }}>
                 <h6>{title}</h6>
                 <a href="#" className='text-decoration-none view-all-btn'>View All</a>
             </div>
-            <div className="table-responsive">
+            <div className="table-responsive status-table-wrapper">
                 <table className="table table-borderless m-0">
                     <colgroup>
                         {headers.map((_, i) => (

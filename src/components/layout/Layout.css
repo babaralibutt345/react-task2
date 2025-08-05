@@ -16,3 +16,22 @@
     margin-left: 0 !important;
   }
 }
+.layout-wrapper {
+  display: flex;
+}
+
+/* Default desktop */
+.content-wrapper {
+  flex-grow: 1;
+  margin-left: 320px;
+  padding: 1.5rem;
+  background: linear-gradient(96.39deg, #F2F7FF -22.45%, #E8F2FF 55.85%, #F2F7FF 150.81%);
+  min-height: 100vh;
+}
+
+/* On <1200px sidebar hidden → content full width */
+@media (max-width: 1199px) {
+  .content-wrapper {
+    margin-left: 0;
+  }
+}

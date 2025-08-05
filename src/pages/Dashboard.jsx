@@ -23,22 +23,22 @@ const Dashboard = () => {
     return (
         <>
             <div className="row g-3">
-                <div className="col-6 col-lg-6 col-xl-6 col-xxl-4">
+                <div className="col-6 col-lg-4 col-xl-4 col-xxl-4">
                     <StatCard title="Total Donations" value="$52,440" week={26} month={120} />
                 </div>
-                <div className="col-6 col-lg-6 col-xl-6 col-xxl-4">
+                <div className="col-6 col-lg-4 col-xl-4 col-xxl-4">
                     <StatCard title="Total Advisors" value={244} week={26} month={120} />
                 </div>
-                <div className="col-6 col-lg-6 col-xl-6 col-xxl-4">
+                <div className="col-6 col-lg-4 col-xl-4 col-xxl-4">
                     <StatCard title="Total Clients" value={1520} week={26} month={120} />
                 </div>
-                <div className="col-6 col-lg-6 col-xl-6 col-xxl-4">
+                <div className="col-6 col-lg-4 col-xl-4 col-xxl-4">
                     <StatCard title="Total Calculations" value={42540} week={26} month={120} />
                 </div>
-                <div className="col-6 col-lg-6 col-xl-6 col-xxl-4">
+                <div className="col-6 col-lg-4 col-xl-4 col-xxl-4">
                     <StatCard title="Received Checks" value={154} week={26} month={120} />
                 </div>
-                <div className="col-6 col-lg-6 col-xl-6 col-xxl-4">
+                <div className="col-6 col-lg-4 col-xl-4 col-xxl-4">
                     <StatCard title="Charity Partners" value={2461} week={26} month={120} />
                 </div>
             </div>

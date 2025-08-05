@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom"; // <-- Link ke liye
 import "./Sidebar.css";
 import logo from "../../../assets/images/logo.png";
 
 const Sidebar = () => {
+    const [isOpen, setIsOpen] = useState(false);
     const menuItems = [
         { name: "Dashboard", path: "/" },
         { name: "Financial Advisors", path: "/financial-advisors" },
@@ -14,8 +15,27 @@ const Sidebar = () => {
         { name: "Roles", path: "/roles" },
     ];
 
+    // Close sidebar on window resize to desktop
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth >= 1200) setIsOpen(true);
+            else setIsOpen(false);
+        };
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
-        <div className="sidebar d-flex flex-column justify-content-between">
+        <>
+            {/* Hamburger Button */}
+            <button
+                className="hamburger-btn d-xl-none"
+                onClick={() => setIsOpen(!isOpen)}
+            >
+                ☰
+            </button>
+            <div className={`sidebar d-flex flex-column justify-content-between ${isOpen ? "open" : ""}`}>
             <div>
                 <div className="logo p-4">
                     <img src={logo} alt="Logo" width={193} height={40} />
@@ -52,6 +72,7 @@ const Sidebar = () => {
                 </p>
             </div>
         </div>
+        </>
     );
 };
 
