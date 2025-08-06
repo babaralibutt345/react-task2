@@ -1,15 +1,16 @@
 .table-header {
   color: #4d98ff !important;
   font-weight: 600 !important;
-  font-size: clamp(12px, 10.8px + 0.375vw, 18px) !important;
+  font-size: 18px !important;
   /* font-family: 'Open Sans', sans-serif; */
   font-style: semi-bold !important;
+  
 }
 
 .tab-content {
     color: #383f7a !important;
     font-family: "Open Sans", sans-serif;
-    font-size: clamp(10px, 8.8px + 0.375vw, 16px) !important;
+    font-size: 16px !important;
     font-weight: 400 !important;
 }
 
@@ -66,9 +67,19 @@
 }
 .view-all-btn {
   font-weight: 600;
-  font-size: clamp(12px, 10.8px + 0.375vw, 18px) !important;
+  font-size: 18px !important;
   font-style: semi-bold !important;
   color: #003276 !important;
 }
 
 
+.profile-badge {
+  background-color: #ECF7FF !important;
+  color: #014FB9 !important;
+  border-radius: 40px !important;
+  padding: 6px 12px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  cursor: pointer;
+
+}
