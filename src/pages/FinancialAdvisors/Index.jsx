@@ -1,6 +1,7 @@
 import React from "react";
-import StatCard from "../../components/dashboard/StatCard/StatCard";
 import StatusTable from "../../components/dashboard/StatusTable/StatusTable";
+import CommonButton from  '../../components/common/Button/CommonButton'
+import { FiPlus, FiSearch, FiSliders } from 'react-icons/fi';
 
 const Dashboard = () => {
     const advisorData = [
@@ -18,6 +19,40 @@ const Dashboard = () => {
         ["Marcella Rippin", "Marcella.Rippin@yahoo.com", "$32,646.74", "Nill", "22-03-25", "12:40", "View Profile"]
     ];
 
+    const tableButtons = [
+        <CommonButton
+            key="add"
+            text="Add New Financial Advisor"
+            icon={<FiPlus />}
+            bgColor="#E7F0FF"
+            textColor="#2D5DD0"
+            hoverBgColor="#D3E4FF"
+            size="medium"
+            shape="pill"
+            onClick={() => alert("Add clicked")}
+        />,
+        <CommonButton
+            key="search"
+            icon={<FiSearch />}
+            bgColor="#E7F0FF"
+            textColor="#2D5DD0"
+            hoverBgColor="#D3E4FF"
+            size="medium"
+            shape="round"
+            onClick={() => alert("Search clicked")}
+        />,
+        <CommonButton
+            key="settings"
+            icon={<FiSliders />}
+            bgColor="#E7F0FF"
+            textColor="#2D5DD0"
+            hoverBgColor="#D3E4FF"
+            size="medium"
+            shape="round"
+            onClick={() => alert("Settings clicked")}
+        />
+    ];
+
     return (
         <>
 
@@ -26,6 +61,7 @@ const Dashboard = () => {
                 title="Financial Advisors"
                 headers={["Full Name", "Email", "Donations", "Total Clients", "Joining Date", "Last Login", "Action"]}
                 data={advisorData}
+                buttons={tableButtons}
             />
         </>
     );

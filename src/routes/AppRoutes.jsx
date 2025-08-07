@@ -8,7 +8,7 @@ import Login from "../pages/auth/Login";
 import Signup from "../pages/auth/Signup";
 
 // ======== Dashboard Pages ======
-import Dashboard from "../pages/Dashboard";
+import Dashboard from "../pages/Dashboard/Dashboard";
 
 // ======== Financial Advisors Pages =====
 import FinancialAdvisorsIndex from "../pages/FinancialAdvisors/Index";

@@ -83,3 +83,63 @@
   cursor: pointer;
 
 }
+
+.success-badge {
+  background-color: #ECFFF6 !important;
+  color: #1AA673 !important;
+  border-radius: 40px !important;
+  padding: 6px 12px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+
+}
+
+.in-process-badge{
+  background-color: #FFF8EC !important;
+  color: #C78A23 !important;
+  border-radius: 40px !important;
+  padding: 6px 12px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+
+}
+
+.pending-review-badge{
+  background-color: #ECEFFF !important;
+  color: #4061CF !important;
+  border-radius: 40px !important;
+  padding: 6px 12px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+
+}
+
+.active-badge{
+  background-color: #F3FFEC !important;
+  color: #44A61A !important;
+  border-radius: 40px !important;
+  padding: 6px 12px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+
+}
+
+.awaiting-checks{
+  background-color: #FFECFB !important;
+  color: #C14696 !important;
+  border-radius: 40px !important;
+  padding: 6px 12px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+
+}
+
+.view{
+  background-color: #ECF7FF !important;
+  color: #014FB9 !important;
+  border-radius: 40px !important;
+  padding: 6px 12px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+
+}
