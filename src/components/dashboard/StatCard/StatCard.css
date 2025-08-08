@@ -4,10 +4,11 @@ h6 {
     font-weight: 400 !important;
     color: #383F7A;
     /* font-family: 'Proxima Nova', sans-serif; */
+    font-style: regular;
 }
 h4 {
     font-size: clamp(28px, 25.6px + 0.75vw, 40px);
-    font-weight: 600;
+    font-weight: 600 !important;
     font-style: semi-bold;
     color: #4D98FF;
     /* font-family: 'Proxima Nova', sans-serif; */
@@ -19,7 +20,7 @@ p {
     font-weight: 400;
     font-style: regular;
     font-size: 14px;
-    /* font-family: 'Proxima Nova', sans-serif; */
+    font-family: 'Proxima Nova', sans-serif !important; 
 
 }
 

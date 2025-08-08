@@ -2,7 +2,7 @@
   color: #4d98ff !important;
   font-weight: 600 !important;
   font-size: 18px !important;
-  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Proxima Nova', sans-serif !important; 
   font-style: semi-bold !important;
   
 }
@@ -70,6 +70,7 @@
   font-size: 18px !important;
   font-style: semi-bold !important;
   color: #003276 !important;
+   font-family: 'Proxima Nova', sans-serif !important;
 }
 
 

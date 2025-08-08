@@ -1,11 +1,12 @@
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('/fonts/proximanova_black.otf') format('opentype');
+  src: url('../public/assets/fonts/proximanova_black.otf') format('opentype');
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('/fonts/proximanova_bold.otf') format('opentype');
+  src: url('../public/assets/fonts/proximanova_bold.otf') format('opentype');
   font-weight: 600;
 
   font-style: normal;
@@ -13,14 +14,14 @@
 
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('/fonts/proximanova_light.otf') format('opentype');
-  font-weight: 400;
+  src: url('../public/assets/fonts/proximanova_light.otf') format('opentype');
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('/fonts/proximanova_regular.otf') format('opentype ');
+  src: url('../public/assets/fonts/proximanova_regular.ttf') format('opentype ');
  
   font-style: normal;
 }
@@ -42,9 +43,9 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;600&display=swap');
 
-body {
+/* body {
   font-family: 'Open Sans', sans-serif;
-}
+} */
 
 /* Headings ka alag font */
 h1, h2, h3, h4, h5, h6 {
@@ -52,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Paragraph aur normal text */
-p, span, a, td, th {
+/* p, span, a, td, th {
   font-family: 'Open Sans', sans-serif;
-}
+} */
 
