@@ -1,0 +1,10 @@
+.custom-input::placeholder {
+  color: #7795BE;
+  opacity: 1; /* Firefox reduces opacity by default */
+}
+
+.form-control:focus {
+    border-color: transparent; /* Removes border color */
+    box-shadow: none; /* Removes box shadow */
+    outline: none; /* Removes outline (for some browsers) */
+}

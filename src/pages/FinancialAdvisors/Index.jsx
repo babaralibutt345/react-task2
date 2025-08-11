@@ -1,6 +1,7 @@
 import React from "react";
 import StatusTable from "../../components/dashboard/StatusTable/StatusTable";
-import CommonButton from  '../../components/common/Button/CommonButton'
+import CommonButton from  '../../components/common/Button/CommonButton';
+import { Link } from "react-router-dom";
 import { FiPlus, FiSearch, FiSliders } from 'react-icons/fi';
 
 const Dashboard = () => {
@@ -20,6 +21,7 @@ const Dashboard = () => {
     ];
 
     const tableButtons = [
+        <Link to = 'add'>
         <CommonButton
             key="add"
             text="Add New Financial Advisor"
@@ -29,8 +31,8 @@ const Dashboard = () => {
             hoverBgColor="#D3E4FF"
             size="medium"
             shape="pill"
-            onClick={() => alert("Add clicked")}
-        />,
+        />
+        </Link>,
         <CommonButton
             key="search"
             icon={<FiSearch />}

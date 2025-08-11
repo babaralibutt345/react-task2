@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 
-const NotificationItem = ({name, message, time}) => {
+const NotificationItem = ({name, time}) => {
     return (
         <div className="p-2 m-3 border-bottom" style={{ border: '1px solid red' }}>
             <div className="card-div">

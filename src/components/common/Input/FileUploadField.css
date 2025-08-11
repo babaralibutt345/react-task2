@@ -1,0 +1,16 @@
+.upload-box {
+  border: 2px dashed #4D98FF;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #ECF7FF;
+  position: relative;
+
+}
+
+.form-file {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
