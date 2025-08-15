@@ -26,8 +26,8 @@ const Dashboard = () => {
             key="add"
             text="Add New Financial Advisor"
             icon={<FiPlus />}
-            bgColor="#E7F0FF"
-            textColor="#2D5DD0"
+            bgColor={'#D6E7FF'}
+            textColor="#003276"
             hoverBgColor="#D3E4FF"
             size="medium"
             shape="pill"
@@ -36,8 +36,8 @@ const Dashboard = () => {
         <CommonButton
             key="search"
             icon={<FiSearch />}
-            bgColor="#E7F0FF"
-            textColor="#2D5DD0"
+            bgColor={'#D6E7FF'}
+            textColor="#003276"
             hoverBgColor="#D3E4FF"
             size="medium"
             shape="round"
@@ -46,8 +46,8 @@ const Dashboard = () => {
         <CommonButton
             key="settings"
             icon={<FiSliders />}
-            bgColor="#E7F0FF"
-            textColor="#2D5DD0"
+            bgColor={'#D6E7FF'}
+            textColor="#003276"
             hoverBgColor="#D3E4FF"
             size="medium"
             shape="round"

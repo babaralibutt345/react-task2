@@ -242,47 +242,76 @@ const AddNewAdvisor = ({ onSubmit, initialData = {} }) => {
 
                 <div className="row g-3">
 
-                    <div className="col-md-4">
-                        <InputField
-                            label="Firm Name"
-                            name="firmName"
-                            value={formData.firmName}
-                            onChange={handleChange}
-                            required
-                            error={errors.firmName}
-                            type="text"
-                            placeholder="Vanguard Inc."
+                    <div className="col-md-8">
+                        <div className="row g-3">
+                            <div className="col-md-6">
+                                <InputField
+                                    label="Firm Name"
+                                    name="firmName"
+                                    value={formData.firmName}
+                                    onChange={handleChange}
+                                    required
+                                    error={errors.firmName}
+                                    type="text"
+                                    placeholder="Vanguard Inc."
+                                />
+                                </div>
 
-                        />
-                    </div>
+                                <div className="col-md-6">
+                                    <SelectField
+                                        label="Designation"
+                                        name="designation"
+                                        value={formData.designation}
+                                        onChange={handleChange}
+                                        options={designation}
+                                        required
+                                        error={errors.designation}
+                                    />
+                                </div>
 
-                    <div className="col-md-4">
-                        <SelectField
-                            label="Designation"
-                            name="designation"
-                            value={formData.designation}
-                            onChange={handleChange}
-                            options={designation}
-                            required
-                            error={errors.designation}
-
-
-                        />
-                    </div>
-
-                    <div className="row">
-                        <div className="com-md-8">
-                           
+                                <div className="col-md-12 mt-0 mb-5">
+                                    <InputField
+                                        label="Discloser Disclaimer"
+                                        name="discloser"
+                                        value={formData.discloser}
+                                        onChange={handleChange}
+                                        error={errors.discloser}
+                                        placeholder="This contains confidential information and is shared only with the understanding..."
+                                        required
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4 d-flex flex-column">
+                            <FileUploadField
+                                label="Logo"
+                                name="logo"
+                                onChange={handleChange}
+                                accept="image/*"
+                                required
+                                error={errors.logo}
+                            />
                         </div>
                     </div>
+                    <div className="d-flex justify-content-end mt-5 gap-3">
+                <CommonButton
+                    text="Close"
+                    bgColor='#D6E7FF'
+                    textColor
+                    size="large"
+                    shape="pill"
 
-                    
-                    
+                />
+                <CommonButton
+                    text="Create Advisor"
+                    bgColor="linear-gradient(269.55deg, #003276 -0.41%, #005DDC 100.63%)"
+                    textColor="white"
+                    size="large"
+                    shape="pill"
 
+                />
                 </div>
-                <div className="row">
-                    
-                </div>
+
             </form>
             
 

@@ -1,6 +1,6 @@
 .upload-box {
   border: 2px dashed #4D98FF;
-  padding: 20px;
+  padding: 18px;
   border-radius: 10px;
   cursor: pointer;
   background: #ECF7FF;
@@ -13,4 +13,15 @@
   position: absolute;
   inset: 0;
   cursor: pointer;
+}
+
+
+.upload-box:hover {
+  border-color: #0d6efd;
+}
+
+.file-input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
 }

@@ -15,32 +15,30 @@ const FileUploadField = ({
 }) => {
     return (
         <div className="mb-3">
-            <label htmlFor={name} className="form-label">{label}</label>
-            <div style={{ backgroundColor:'#ECF7FF', padding:'17px', borderRadius:'28px'}}>
-            <div className="upload-box text-center">
-                <div className="mb-2">
-                <LuImagePlus size={50} style={{ backgroundColor:'#D6E7FF', padding:'10px', borderRadius:'50%'}} />
-                </div>
-                    <small style={{ color:'#7795BE'}}>JPEG, PNG, TIFF, BMP</small>
-                <Form.Control
-                
-                type="file"
-                className="form-control"
 
-                  
-                />
-            </div>
-            </div>
-            {/* <input
-                type="file"
-                className={`form-file ${error ? "is-invalid" : ""}`}
-                id={name}
-                name={name}
-                onChange={onChange}
-                accept={accept}
-                required={required}
-                disabled={disabled}
-            /> */}
+            
+            <Form.Group className="">
+                <label htmlFor={name} className="form-label">{label}</label>
+                <div style={{ backgroundColor: '#ECF7FF', padding: '22px', borderRadius: '28px' }}>
+                <div className="upload-box text-center">
+                        <div className="mb-2">
+                            <LuImagePlus size={50} style={{ backgroundColor: '#D6E7FF', padding: '10px', borderRadius: '50%', color:'#383F7A' }} />
+                        </div>
+                        <small style={{ color:'#7795BE'}}>JPEG, PNG, TIFF BMP</small>
+                    <Form.Control
+                        type="file"
+                        className={`form-file ${error ? "is-invalid" : ""}`}
+                        id={name}
+                        name={name}
+                        onChange={onChange}
+                        accept={accept}
+                        required={required}
+                        disabled={disabled}  
+                        />
+                </div>
+                </div>
+            </Form.Group>
+            
             {error && <div className="invalid-feedback">{error}</div>}
         </div>
     );

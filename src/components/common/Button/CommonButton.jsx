@@ -5,17 +5,17 @@ const CommonButton = ({
     text,
     icon,
     onClick,
-    bgColor = '#E7F0FF',
-    textColor = '#2D5DD0',
-    hoverBgColor = '#D3E4FF',
-    size = 'medium', // small, medium, large
-    shape = 'pill', // pill, round, square
+    bgColor,
+    textColor,
+    hoverBgColor,
+    size, // small, medium, large
+    shape, // pill, round, square
 }) => {
     return (
         <button
             className={`common-btn ${size} ${shape}`}
             style={{
-                backgroundColor: bgColor,
+                background: bgColor,
                 color:textColor,
             }}
             onClick={onClick}
