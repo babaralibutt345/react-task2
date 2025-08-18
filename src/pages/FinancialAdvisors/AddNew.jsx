@@ -293,7 +293,7 @@ const AddNewAdvisor = ({ onSubmit, initialData = {} }) => {
                             />
                         </div>
                     </div>
-                    <div className="d-flex justify-content-end mt-5 gap-3">
+                    <div className="d-flex justify-content-end mt-5 pt-5 gap-3">
                 <CommonButton
                     text="Close"
                     bgColor='#D6E7FF'

@@ -10,6 +10,7 @@ const CommonButton = ({
     hoverBgColor,
     size, // small, medium, large
     shape, // pill, round, square
+    fontfamily
 }) => {
     return (
         <button
@@ -17,6 +18,7 @@ const CommonButton = ({
             style={{
                 background: bgColor,
                 color:textColor,
+                fontFamily: fontfamily,
             }}
             onClick={onClick}
             onMouseEnter={(e) => (e.target.style.backgroundColor = hoverBgColor)}
