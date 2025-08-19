@@ -2,8 +2,11 @@ import React from "react";
 import StatusTable from "../../components/dashboard/StatusTable/StatusTable";
 import CommonButton from '../../components/common/Button/CommonButton'
 import { FiPlus, FiSearch, FiSliders, FiMoreVertical } from 'react-icons/fi';
+import { Link, useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+    const navigate = useNavigate();
+    
     const ActionButton = ({ id }) => (
         <button
             className="btn btn-lg p-0 "
@@ -38,7 +41,7 @@ const Dashboard = () => {
             hoverBgColor="#D3E4FF"
             size="medium"
             shape="pill"
-            onClick={() => alert("Add clicked")}
+            onClick={() => navigate("/clients/add")}
         />,
         <CommonButton
             key="search"
