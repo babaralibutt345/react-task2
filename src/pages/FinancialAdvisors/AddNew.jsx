@@ -1,5 +1,5 @@
 // src/pages/FinancialAdvisors/AddNew.jsx
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import InputField from '../../components/common/Input/InputField';
 import SelectField from '../../components/common/Input/SelectField';
 import FileUploadField from '../../components/common/Input/FileUploadField';
@@ -7,7 +7,7 @@ import CommonButton from "../../components/common/Button/CommonButton";
 
 
 
-const AddNewAdvisor = ({ onSubmit, initialData = {} }) => {
+const AddNewAdvisor = ({ onSubmit, onCancel, initialData = {} }) => {
     const states = [
         { value: 'CA', label: 'California' },
         { value: 'NY', label: 'New York' },
@@ -22,18 +22,9 @@ const AddNewAdvisor = ({ onSubmit, initialData = {} }) => {
     ];
 
     const designation = [
-        {
-            value:'CFA',
-            label:'Certified Financial Planner (CFP)',
-        },
-        {
-            value:'IA',
-            label:'Investment Advisor',
-        },
-        {
-            value:'sas',
-            label:'saassasa',
-        }
+        { value:'CFP', label:'Certified Financial Planner (CFP)' },
+        { value:'IA', label:'Investment Advisor'},
+        { value:'sas', label:'saassasa'}
     ];
 
     const citiesByState = {
@@ -108,32 +99,64 @@ const AddNewAdvisor = ({ onSubmit, initialData = {} }) => {
         city: initialData.city || "",
         firmName: initialData.firmName || "",
         designation: initialData.designation || "",
-        logo: null,
+        discloser: initialData.discloser || "",
+        logo: null, //file object
     });
 
     const [errors, setErrors] = useState({});
 
+    // Change Handler ----------
     const handleChange = (e) => {
         const { name, value, files } = e.target;
-        setFormData({
-            ...formData,
-            [name]: files ? files[0] : value,
+
+        // setFormData({
+        //     ...formData,
+        //     [name]: files ? files[0] : value,
+        // });
+
+        setFormData((prev) => {
+            // If State changes, reset city
+            if (name === "state") {
+                return {
+                    ...prev,
+                    state: value,
+                    city: "", // Reset city when state changes
+                };
+            }
+            return {
+                ...prev,
+                [name]: files ? files[0] : value,
+            };
         });
     };
 
+    // ---Dervived Cities -------
+
+    const cities = useMemo(() => {
+        return formData.state ? citiesByState[formData.state] || [] : [];
+    }, [formData.state]);
+
     const validate = () => {
         let newErrors = {};
-        if (!formData.firstName) newErrors.firstName = "First name is required";
-        if (!formData.middleName) newErrors.middleName = "Middle name is required";
-        if (!formData.lastName) newErrors.lastName = "Last name is required";
-        if (!formData.email) newErrors.email = "Email is required";
+        const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!formData.firstName.trim()) newErrors.firstName = "First name is required";
+        if (!formData.middleName.trim()) newErrors.middleName = "Middle name is required";
+        if (!formData.lastName.trim()) newErrors.lastName = "Last name is required";
+        if (!formData.email.trim()) newErrors.email = "Email is required";
+        else if (!emailRe.test(formData.email)) newErrors.email = "Enter a valid email";
+
         if (!formData.state) newErrors.state = "Please select a state";
         if (!formData.city) newErrors.city = "Please select a city";
-        if (!formData.firmName) newErrors.firmName = "Firm name is required";
+        if (!formData.firmName.trim()) newErrors.firmName = "Firm name is required";
         if (!formData.designation) newErrors.designation = "Designation is required";
+        if (!formData.discloser.trim()) newErrors.discloser = "Disclosure is required";
+        if (!formData.logo) newErrors.logo = "Logo is required";
+
         return newErrors;
     };
 
+    // Submit Handler ----------
     const handleSubmit = (e) => {
         e.preventDefault();
         const newErrors = validate();
@@ -145,7 +168,7 @@ const AddNewAdvisor = ({ onSubmit, initialData = {} }) => {
         }
     };
 
-    const cities = formData.state ? citiesByState[formData.state] || [] : [];
+    // const cities = formData.state ? citiesByState[formData.state] || [] : [];
 
     return (
         <div className="card p-5 mt-1 mb-4 shadow-sm border-0">
@@ -300,6 +323,7 @@ const AddNewAdvisor = ({ onSubmit, initialData = {} }) => {
                     textColor
                     size="large"
                     shape="pill"
+                    onClick={() => onCancel?.()}
 
                 />
                 <CommonButton
